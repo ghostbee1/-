@@ -66,8 +66,6 @@ class ReNamePS(QDialog, Ui_Dialog6, DueFiles):
         self.setupUi(self)
         # self.init_ui()  # print重定向
         self.flag = ''
-        print(
-            '简易脚本：该脚本是由@饼饼开发的非商用版本，仅作为学习使用，可试用7天》使用建议先点击...指定到文件所在目录，不点击默认是执行当前软件目录，\n确认后按下-圆点-执行对应功能！ ')
         self.toolButton.clicked.connect(self.dictionary_choose)  # ...按钮
         self.buttonBox.accepted.connect(self.act_rename)
         self.buttonBox.rejected.connect(self.act_clear)
